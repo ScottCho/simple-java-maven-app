@@ -6,10 +6,5 @@ pipeline {
         sh 'pwd'
       }
     }
-    stage('script') {
-      steps {
-        sh 'sh \'ls /tmp\''
-      }
-    }
   }
 }
