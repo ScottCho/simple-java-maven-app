@@ -1,12 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('init') {
       steps {
-        withAnt() {
-          withAnt(installation: 'init')
-        }
-
+        sh 'ls /tmp'
       }
     }
     stage('script') {
